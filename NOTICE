@@ -1,0 +1,18 @@
+rn-progress-next
+Copyright (c) 2026 Jonathan Kablan and contributors
+
+This project reproduces the public API — component names, prop names and
+default values — of react-native-progress, so that projects can migrate by
+changing an import:
+
+  react-native-progress
+  Copyright (c) 2015 Joel Arvidsson
+  Licensed under the MIT License
+  https://github.com/oblador/react-native-progress
+
+No source code is copied from that project; the implementation here is written
+against Reanimated 4 and the New Architecture. The API surface is reproduced
+deliberately, for compatibility.
+
+rn-progress-next is an independent community rewrite. It is not affiliated
+with, nor endorsed by, the authors of react-native-progress.

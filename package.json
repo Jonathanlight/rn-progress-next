@@ -1,0 +1,99 @@
+{
+  "name": "rn-progress-next",
+  "version": "0.1.0",
+  "description": "Progress indicators for React Native — Reanimated 4, optional SVG, New Architecture",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./bar": {
+      "types": "./lib/entries/bar.d.ts",
+      "default": "./lib/entries/bar.js"
+    },
+    "./circle": {
+      "types": "./lib/entries/circle.d.ts",
+      "default": "./lib/entries/circle.js"
+    },
+    "./pie": {
+      "types": "./lib/entries/pie.d.ts",
+      "default": "./lib/entries/pie.js"
+    },
+    "./circle-snail": {
+      "types": "./lib/entries/circle-snail.d.ts",
+      "default": "./lib/entries/circle-snail.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "NOTICE",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf lib",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-native": ">=0.78.0",
+    "react-native-reanimated": ">=4.0.0",
+    "react-native-svg": ">=15.0.0",
+    "react-native-worklets": ">=0.4.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native-svg": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.1.0",
+    "react-native": "^0.81.4",
+    "react-native-reanimated": "^4.6.0",
+    "react-native-svg": "^15.15.5",
+    "react-native-worklets": "^0.6.1",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "keywords": [
+    "react-native",
+    "progress",
+    "progress-bar",
+    "progress-circle",
+    "activity-indicator",
+    "spinner",
+    "react-native-progress",
+    "reanimated",
+    "new-architecture",
+    "accessibility",
+    "reduce-motion",
+    "expo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonathanlight/rn-progress-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jonathanlight/rn-progress-next/issues"
+  },
+  "homepage": "https://github.com/Jonathanlight/rn-progress-next#readme",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
