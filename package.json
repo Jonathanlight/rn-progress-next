@@ -1,6 +1,6 @@
 {
   "name": "rn-progress-next",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Progress indicators for React Native — Reanimated 4, optional SVG, New Architecture",
   "license": "MIT",
   "type": "module",
